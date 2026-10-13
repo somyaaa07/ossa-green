@@ -12,15 +12,16 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <div className="overflow-x-clip">
-      <AnnouncementBar />
+      {/* <AnnouncementBar /> */}
       <Navbar />
       <main>
         <Hero />
         <BrandValues />
         <ProductSection />
         <GheeOffers />
-        <WhyChooseUs />
         <AboutSection />
+        <WhyChooseUs />
+        
         <FinalCTA />
       </main>
       <Footer />

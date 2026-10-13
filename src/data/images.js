@@ -1,11 +1,16 @@
 const unsplash = (id, w = 1400) => `https://unsplash.com/photos/${id}/download?force=true&w=${w}`
 
-const MILK_BOTTLE = '/images/products/image-1.png'
+const MILK_BOTTLE = '/images/products/bottle.png'
 const MILK_GLASS = unsplash('MHVheSetqEE')
 const GHEE = '/images/products/image-2.png'
 
 export const IMAGES = {
-  banners: ['/images/banners/banner2.png', '/images/banners/banner1.png', '/images/banners/banner3.png'],
+  banners: ['/images/banners/banner5.png', '/images/banners/banner1.png', '/images/banners/banner3.png'],
+    bannersMobile: [
+    '/images/banners/mobilebanner4.png', // slide 1: Pure Goodness
+    '/images/banners/mobilebanner.jpeg', // slide 2: A2 ghee offers
+    '/images/banners/mobbilebanner2.png', // slide 3: Milk for every preference
+  ],
   why: MILK_GLASS,
   aboutMain: MILK_BOTTLE,
   aboutSmall: GHEE,
@@ -14,10 +19,10 @@ export const IMAGES = {
 
 export const PRODUCT_IMAGES = {
   'cow-milk': MILK_BOTTLE,
-  'buffalo-milk': '/images/products/buffalo.png',
-  'gir-cow-milk': '/images/products/image-2.png',
-  paneer: '/images/products/image-3.png',
-  'a2-bilona-ghee': '/images/products/image-4.png',
-  'a2-malai-ghee': '/images/products/image-6.png',
-  'badam-milk': '/images/products/image-5.png',
+  'buffalo-milk': '/images/products/bootle1.png',
+  'gir-cow-milk': '/images/products/bottle2.png',
+  paneer: '/images/products/panner.png',
+  'a2-bilona-ghee': '/images/products/ghee1.png',
+  'a2-malai-ghee': '/images/products/ghee3.png',
+  'badam-milk': '/images/products/badammilk.png',
 }

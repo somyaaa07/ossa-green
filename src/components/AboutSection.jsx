@@ -5,16 +5,16 @@ import { generalMessage } from '../utils/whatsapp'
 
 export default function AboutSection() {
   return (
-    <section id="about" aria-labelledby="about-title" className="pb-16 sm:pb-20 lg:pb-24">
+    <section id="about" aria-labelledby="about-title" className="py-15 sm:py-15 lg:py-15">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <div className="relative mx-auto w-full max-w-lg pb-8 pr-6 lg:max-w-none">
-          <Picture src={IMAGES.aboutMain} alt="Dairy products from OSSA Greens" scene={1} className="aspect-[4/5] rounded-[2rem] sm:aspect-[5/5]" />
-          <Picture
-            src={IMAGES.aboutSmall}
+          <Picture src="/images/products/bulkbottle.png" alt="Dairy products from OSSA Greens" scene={1} className="aspect-[6/5] rounded-[2rem] sm:aspect-[6/5]" />
+          {/* <Picture
+            src=""
             alt="Ghee and milk from OSSA Greens"
             scene={3}
             className="absolute -bottom-0 right-0 aspect-square w-2/5 rounded-3xl border-8 border-ossa-natural shadow-xl"
-          />
+          /> */}
         </div>
 
         <div>
