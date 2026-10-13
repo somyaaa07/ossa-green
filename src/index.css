@@ -1,0 +1,45 @@
+/* Tailwind v4 entry. On a v3 project, replace this line with
+   @tailwind base; @tailwind components; @tailwind utilities; */
+@import "tailwindcss";
+
+@theme {
+  --color-ossa-blue: #034c77;
+  --color-ossa-deep: #02395a;
+  --color-ossa-lime: #97cc40;
+  --color-ossa-natural: #f5f8f0;
+  --color-ossa-ink: #243746;
+  --color-ossa-muted: #64748b;
+  --font-heading: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #f5f8f0;
+  color: #243746;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Keeps headings clear of the floating navbar after a jump */
+section[id] { scroll-margin-top: 6.5rem; }
+
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Hero banner text rises in when its slide is active */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+[data-active="true"] .rise { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+[data-active="true"] .rise-2 { animation-delay: 0.1s; }
+[data-active="true"] .rise-3 { animation-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rise { animation: none !important; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
