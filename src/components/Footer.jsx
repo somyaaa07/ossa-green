@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
           <div className="mt-6 text-sm text-white/80">
             <p className="font-semibold text-white">{COMPANY.legalName}</p>
-                        <p className="font-semibold text-white">Roja-Jalapur, Noida Extension</p>
+                        <p className="font-semibold text-white">Roza-Jalalpur, Noida Extension</p>
 
             <p className="mt-1">
               Phone:{' '}
